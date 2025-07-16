@@ -1,0 +1,113 @@
+:root {
+  --text-color-header: #ffffff;
+  --header-button-color: #000;
+  --main-titel-color: #453030;
+  --main-subtitel-color: #957d62;
+  --main-text-color: rgba(0, 0, 0, 0.75);
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--main-text-color);
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.bg-img-on {
+  background-image: url(../images/photos/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+/* ========================header====================================== */
+.header-container {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.logo-img {
+  width: 145px;
+  height: 79px;
+}
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 25px;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 25px;
+  border-radius: 8px;
+  width: 329px;
+}
+.header-link {
+  font-size: 16px;
+  color: var(--text-color-header);
+}
+.header-phone {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-phone-logo {
+  width: 22px;
+  height: 22px;
+  fill: var(--text-color-header);
+  stroke-width: 1px;
+}
+.header-phonen-Number {
+  font-size: 16px;
+  color: var(--text-color-header);
+  :hover {
+    text-decoration: underline;
+  }
+}
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+/* ======================hero============================ */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 185px;
+  padding-bottom: 30px;
+}
+.hero-titel {
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 95%;
+  color: var(--text-color-header);
+  max-width: 670px;
+}
+
+.hero-info-text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  max-width: 210px;
+  color: var(--text-color-header);
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.hero-info-btn {
+  border-radius: 8px;
+  padding: 14px 75px;
+  background-color: var(--header-button-color);
+  color: var(--text-color-header);
+  max-width: 100%;
+  text-align: center;
+}
