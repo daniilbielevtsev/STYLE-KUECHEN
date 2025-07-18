@@ -98,9 +98,13 @@ body {
 }
 /* ==========opne-close-btn======================== */
 .header-open-close {
+  --burger-size: 24px;
+  --burger-line: 3px;
+  --burger-color: var(--text-color-header);
+
   width: 30px;
-  height: 24px;
-  display: flex;
+  height: var(--burger-size);
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -108,30 +112,35 @@ body {
   position: absolute;
   top: 24px;
   right: 24px;
+  transition: transform 0.3s ease;
+}
+
+.header-open-close:hover {
+  transform: scale(1.1);
 }
 
 .header-open-close span {
   display: block;
-  height: 3px;
+  height: var(--burger-line);
   width: 100%;
-  background-color: var(--text-color-header);
+  background-color: var(--burger-color);
   border-radius: 50px;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.2s ease, width 0.2s ease;
   transform-origin: center;
 }
-
 .header-open-close.open span:nth-child(1) {
-  transform: rotate(-45deg) translateY(15px);
-  width: 100%;
+  transform: translateY(calc(var(--burger-size) / 2 - var(--burger-line) / 2))
+    rotate(-45deg);
 }
 
 .header-open-close.open span:nth-child(2) {
   opacity: 0;
+  transform: scaleX(0);
 }
 
 .header-open-close.open span:nth-child(3) {
-  transform: rotate(45deg) translateY(-15px);
-  width: 100%;
+  transform: translateY(calc(var(--burger-size) / -2 + var(--burger-line) / 2))
+    rotate(45deg);
 }
 .mobile-nav {
   position: fixed;
@@ -158,6 +167,7 @@ body {
 .mobile-nav.active {
   right: 0;
 }
+
 @media (max-width: 1200px) {
   .header-phonen-Number {
     display: none;
@@ -188,6 +198,9 @@ body {
   .logo-img {
     width: 140px;
     height: 80px;
+  }
+  .header-open-close {
+    display: flex;
   }
 }
 /* ======================hero============================ */
