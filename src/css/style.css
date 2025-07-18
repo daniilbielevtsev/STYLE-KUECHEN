@@ -482,11 +482,10 @@ body {
 }
 @media (max-width: 1200px) {
   .first-box-titel {
-    font-size: 48px;
-    margin-bottom: 200px;
+    margin-bottom: 270px;
   }
   .service-secound-box {
-    width: 100%;
+    width: 500px;
   }
   .services-info-titel {
     font-size: 24px;
@@ -604,3 +603,45 @@ body {
   }
 }
 /* ===============open-close========================= */
+/* ==================================footer============================ */
+.footer {
+  background-color: #382f25;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  width: 145px;
+  height: 79px;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-link {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-header);
+}
+@media (max-width: 658px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: self-start;
+  }
+
+  .footer-link {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
