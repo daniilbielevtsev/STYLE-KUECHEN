@@ -99,6 +99,10 @@ html {
   scroll-padding: 800px;
 }
 button:focus,
-a:focus {
+button:active {
   outline: none;
+  box-shadow: none;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
 }
