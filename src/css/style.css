@@ -96,6 +96,68 @@ body {
   align-items: center;
   gap: 16px;
 }
+/* ==========opne-close-btn======================== */
+.header-open-close {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.header-open-close span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--text-color-header);
+  border-radius: 50px;
+  transition: 0.3s ease;
+  transform-origin: center;
+}
+
+.header-open-close.open span:nth-child(1) {
+  transform: rotate(-45deg) translateY(15px);
+  width: 100%;
+}
+
+.header-open-close.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-open-close.open span:nth-child(3) {
+  transform: rotate(45deg) translateY(-15px);
+  width: 100%;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(30px);
+  background: rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 998;
+  padding: 60px 20px;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.mobile-nav-list {
+  color: var(--text-color-header);
+  font-weight: 400;
+  font-size: 30px;
+}
+.mobile-nav.active {
+  right: 0;
+}
 @media (max-width: 1200px) {
   .header-phonen-Number {
     display: none;
@@ -519,3 +581,4 @@ body {
     height: 16px;
   }
 }
+/* ===============open-close========================= */
