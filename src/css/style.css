@@ -251,6 +251,9 @@ body {
   .hero-info-con {
     padding-bottom: 50px;
   }
+  .hero-container {
+    height: 99vh;
+  }
 }
 /* ============================== */
 .about {
