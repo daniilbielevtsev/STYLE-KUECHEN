@@ -1,7 +1,14 @@
-function setVH() {
-  const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-}
+let isScrolling;
+window.addEventListener(
+  "scroll",
+  () => {
+    isScrolling = true;
+    clearTimeout(isScrolling);
+    isScrolling = setTimeout(() => (isScrolling = false), 100);
+  },
+  { passive: true }
+);
 
-setVH();
-window.addEventListener("resize", setVH);
+window.addEventListener("resize", () => {
+  if (!isScrolling) setVH();
+});
