@@ -553,11 +553,11 @@ body {
   }
 
   .services-info-titel {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .services-info-text {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -572,7 +572,7 @@ body {
   }
 
   .first-box-titel {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 1.2;
     margin-bottom: 30px;
   }
@@ -583,21 +583,21 @@ body {
   }
 
   .services-info-titel {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .services-info-text {
-    font-size: 13.5px;
+    font-size: 16px;
   }
 
   .services-info-photo {
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
   }
 
   .services-info-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
   .services-container {
     background-image: none;
