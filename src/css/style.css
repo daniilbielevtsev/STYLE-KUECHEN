@@ -253,10 +253,10 @@ body {
   max-width: 100%;
   text-align: center;
   cursor: pointer;
-  &:hover {
-    background-color: #1d1d1d;
+  /* &:hover {
+    background-color: rgb(199, 199, 199);
     transition: background-color 0.2s ease-in;
-  }
+  } */
 }
 @media (min-width: 1440px) {
   .hero-container {
