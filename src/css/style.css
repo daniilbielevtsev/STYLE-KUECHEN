@@ -389,6 +389,12 @@ body {
     max-width: 100%;
   }
 }
+@media (max-width: 658px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 /* =========================services============================ */
 .services {
   padding-top: 160px;
