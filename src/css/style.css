@@ -252,7 +252,7 @@ body {
     padding-bottom: 50px;
   }
   .hero-container {
-    height: 99vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 /* ============================== */
