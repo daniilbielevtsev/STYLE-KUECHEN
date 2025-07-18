@@ -98,3 +98,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 800px;
 }
+button:focus,
+a:focus {
+  outline: none;
+}
