@@ -103,6 +103,10 @@ button:active {
   outline: none;
   box-shadow: none;
 }
-button {
+a,
+button,
+div {
+  outline: none;
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
