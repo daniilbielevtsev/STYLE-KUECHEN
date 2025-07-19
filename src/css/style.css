@@ -603,7 +603,108 @@ body {
     height: 20px;
   }
 }
-/* ===============open-close========================= */
+/* ===============kontakts========================= */
+.kontacts {
+  padding-top: 80px;
+  padding-bottom: 160px;
+  background-image: url(../images/photos/kontakte-bg.jpg);
+  background-size: cover;
+}
+.kontacts-subtitel {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-subtitel-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.kontacts-titel {
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--main-titel-color);
+  line-height: 100%;
+  max-width: 376px;
+  margin-bottom: 30px;
+}
+.kontacts-text {
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.75);
+  max-width: 228px;
+  margin-bottom: 40px;
+}
+.kontacts-more {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 198px;
+}
+.contakts-more-titel {
+  font-size: 28px;
+  color: var(--main-titel-color);
+  margin-bottom: 15px;
+}
+.contakts-more-link {
+  color: hsla(0, 0%, 0%, 0.75);
+  font-size: 18px;
+  font-weight: 400;
+  width: 198px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontacts {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .kontacts-titel {
+    font-size: 36px;
+  }
+
+  .kontacts-text {
+    font-size: 16px;
+  }
+
+  .contakts-more-titel {
+    font-size: 24px;
+  }
+
+  .contakts-more-link {
+    font-size: 16px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .kontacts {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-image: url(../images/photos/kontakts-bg-mobile.jpg);
+  }
+
+  .kontacts-titel {
+    font-size: 40px;
+  }
+
+  .kontacts-subtitel {
+    font-size: 12px;
+  }
+
+  .kontacts-text {
+    font-size: 16px;
+  }
+
+  .contakts-more-titel {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .contakts-more-link {
+    font-size: 14px;
+  }
+}
 /* ==================================footer============================ */
 .footer {
   background-color: #372626;

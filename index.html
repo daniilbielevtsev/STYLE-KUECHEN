@@ -9,17 +9,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="websites icon" href="./src/images/icons/Logo.svg" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <title>STULE-KÜCHEN</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>STYLE-KÜCHEN</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="#" class="logo">
-          <img src="./src/images/icons/Logo.svg" alt="LoGo" class="logo-img" />
+        <a href="#" class="logo animate__animated animate__fadeInLeft">
+          <img src="./src/images/icons/Logo.svg" alt="LoGo" class="" />
         </a>
-        <nav class="header-nav">
+        <nav class="header-nav animate__animated animate__backInDown">
           <ul class="header-list">
             <li class="header-item">
               <a href="#about" class="header-link">Über</a>
@@ -28,11 +35,11 @@
               <a href="#services" class="header-link">Dienstleistungen</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link">Kontakte</a>
+              <a href="#kontaakts" class="header-link">Kontakte</a>
             </li>
           </ul>
         </nav>
-        <div class="header-contact">
+        <div class="header-contact animate__animated animate__fadeInRight">
           <a href="tel:076 769 67 57" class="header-phone">
             <img
               class="icon-phone-logo"
@@ -44,7 +51,10 @@
             076 769 67 57
           </a>
         </div>
-        <div class="header-open-close" id="menuToggle">
+        <div
+          class="header-open-close animate__animated animate__fadeInRight"
+          id="menuToggle"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -53,11 +63,9 @@
           <ul class="mobile-list">
             <li><a href="#about" class="mobile-nav-list" href="#">Über</a></li>
             <li>
-              <a href="#services" class="mobile-nav-list" href="#"
-                >Dienstleistungen</a
-              >
+              <a href="#services" class="mobile-nav-list">Dienstleistungen</a>
             </li>
-            <li><a class="mobile-nav-list" href="#">Kontakte</a></li>
+            <li><a class="mobile-nav-list" href="#kontaakts">Kontakte</a></li>
           </ul>
         </nav>
       </div>
@@ -66,8 +74,10 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-info-con">
-            <h1 class="hero-titel">Ihre Küche. Ihr Stil.</h1>
-            <div class="hero-info">
+            <h1 class="hero-titel animate__animated animate__fadeInLeft">
+              Ihre Küche. Ihr Stil.
+            </h1>
+            <div class="hero-info animate__animated animate__fadeInRight">
               <p class="hero-info-text">
                 Massgeschneiderte Küchenlösungen aus der Schweiz
               </p>
@@ -76,12 +86,14 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container about-container">
           <div class="about-info">
-            <h3 class="about-subtitel">Über</h3>
-            <h2 class="about-titel">Erfahrenes Team für Küchenmontage</h2>
-            <p class="about-text">
+            <h3 class="about-subtitel" data-aos="fade-right">Über</h3>
+            <h2 class="about-titel" data-aos="fade-right">
+              Erfahrenes Team für Küchenmontage
+            </h2>
+            <p class="about-text" data-aos="fade-right">
               Wir sind ein erfahrenes Team, das sich auf die Montage und den
               Aufbau von Küchen spezialisiert hat — präzise, zuverlässig und
               termintreu.
@@ -94,15 +106,14 @@
           />
         </div>
       </section>
-      <section class="services">
-        <div class="div" id="about"></div>
+      <section class="services" id="services">
         <div class="container services-container">
           <div class="service-fist-box">
             <h3 class="first-box-subtitel">Dienstleistungen</h3>
             <h2 class="first-box-titel">Ablauf & Leistungen</h2>
           </div>
           <div class="service-secound-box">
-            <div class="services-info">
+            <div class="services-info" data-aos="fade-right">
               <div class="services-info-photo">
                 <img
                   class="services-info-icon"
@@ -118,7 +129,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-info">
+            <div class="services-info" data-aos="fade-right">
               <div class="services-info-photo">
                 <img
                   class="services-info-icon"
@@ -136,7 +147,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-info">
+            <div class="services-info" data-aos="fade-right">
               <div class="services-info-photo">
                 <img
                   class="services-info-icon"
@@ -155,8 +166,31 @@
           </div>
         </div>
       </section>
-      <section class="kontacts"></section>
-      <div id="services"></div>
+      <section class="kontacts" id="kontaakts" data-aos="zoom-in">
+        <div class="container kontacts-container">
+          <h3 class="kontacts-subtitel">Kontakte</h3>
+          <h2 class="kontacts-titel">Wir sind für Sie da</h2>
+          <p class="kontacts-text">
+            Was auch immer Sie benötigen — wir setzen es zuverlässig um.
+          </p>
+          <div class="kontacts-more">
+            <div class="contakts-more-con">
+              <h2 class="contakts-more-titel">Telefon</h2>
+              <a class="contakts-more-link">076 769 67 57</a>
+            </div>
+            <div class="contakts-more-con">
+              <h2 class="contakts-more-titel">E-Mail</h2>
+              <a class="contakts-more-link">info@stylekuechen.ch</a>
+            </div>
+            <div class="contakts-more-con">
+              <h2 class="contakts-more-titel">Adresse</h2>
+              <a class="contakts-more-link"
+                >Vor den Haldenstrasse 1a 5074 Eiken, Schweiz</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container footer-container">
@@ -176,5 +210,9 @@
     </footer>
     <script type="module" src="./src/js/mobile-window.js"></script>
     <script type="module" src="./src/js/viewport.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

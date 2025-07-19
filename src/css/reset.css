@@ -96,7 +96,7 @@ img {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 800px;
+  overflow-x: hidden;
 }
 button:focus,
 button:active {
