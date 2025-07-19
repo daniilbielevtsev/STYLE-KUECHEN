@@ -681,7 +681,8 @@ body {
   .kontacts {
     padding-top: 40px;
     padding-bottom: 80px;
-    background-image: url(../images/photos/kontakts-bg-mobile.jpg);
+    background-image: none;
+    background: linear-gradient(to top, #b9b0a793, #ffffff00);
   }
 
   .kontacts-titel {
