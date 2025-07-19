@@ -3,24 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==================google-fonts=========================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
       rel="stylesheet"
     />
+    <!-- ========================animation-libery============================== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <!-- =================animation-AOS============================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ======================icon-website====================== -->
     <link rel="websites icon" href="./src/images/icons/Logo.svg" />
+    <!-- ====================style and resrt files========================== -->
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>STYLE-KÜCHEN</title>
   </head>
   <body>
+    <!-- pleoader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+    <!-- ===================header======================== -->
     <header class="header">
       <div class="container header-container">
         <a href="#" class="logo animate__animated animate__fadeInLeft">
@@ -174,19 +183,19 @@
             Was auch immer Sie benötigen — wir setzen es zuverlässig um.
           </p>
           <div class="kontacts-more">
-            <div class="contakts-more-con">
+            <div class="contakts-more-con" data-aos="fade-right">
               <h2 class="contakts-more-titel">Telefon</h2>
               <a href="tel:076 769 67 57" class="contakts-more-link"
                 >076 769 67 57</a
               >
             </div>
-            <div class="contakts-more-con">
+            <div class="contakts-more-con" data-aos="fade-right">
               <h2 class="contakts-more-titel">E-Mail</h2>
               <a href="mailto:info@stylekuechen.ch" class="contakts-more-link"
                 >info@stylekuechen.ch</a
               >
             </div>
-            <div class="contakts-more-con">
+            <div class="contakts-more-con" data-aos="fade-right">
               <h2 class="contakts-more-titel">Adresse</h2>
               <a
                 href="https://www.google.de/maps/place/Vor+den+Haldenstrasse+1a,+5074+Eiken,+Schweiz/@47.5361381,7.9768465,17z/data=!3m1!4b1!4m6!3m5!1s0x479048ed8fb5547d:0x1b3adc60996eb705!8m2!3d47.5361345!4d7.9794214!16s%2Fg%2F11xf7mz016?hl=de&entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
@@ -214,11 +223,17 @@
         </ul>
       </div>
     </footer>
-    <script type="module" src="./src/js/mobile-window.js"></script>
-    <script type="module" src="./src/js/viewport.js"></script>
+    <!-- Сторонняя библиотека AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!--AOS -->
     <script>
       AOS.init();
     </script>
+
+    <!--js-files -->
+    <script type="module" src="./src/js/viewport.js"></script>
+    <script type="module" src="./src/js/mobile-window.js"></script>
+    <script type="module" src="./src/js/load.js"></script>
   </body>
 </html>
