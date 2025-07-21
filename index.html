@@ -90,7 +90,62 @@
               <p class="hero-info-text">
                 Massgeschneiderte Küchenlösungen aus der Schweiz
               </p>
-              <a href="#kontakts" class="hero-info-btn">Beratung</a>
+              <button class="hero-info-btn">Beratung</button>
+            </div>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <div class="all-modal-info">
+                  <h2 class="modal-titel">Beratung</h2>
+                  <button class="close">
+                    <img
+                      class="modal-icon"
+                      src="./src/images/icons/modal-close.svg"
+                      alt="close-button"
+                    />
+                  </button>
+                  <form
+                    class="modal-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="0a4fd915-5d84-407e-bdbb-d8dfe7e08afa"
+                    />
+                    <input
+                      class="modal-input"
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Name"
+                    />
+                    <input
+                      class="modal-input"
+                      type="text"
+                      name="Nachname"
+                      required
+                      placeholder="Nachname"
+                    />
+                    <input
+                      class="modal-input"
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="E-mail"
+                    />
+                    <textarea
+                      class="modal-massege"
+                      name="message"
+                      required
+                      placeholder="Dienstleistung anfragen"
+                    ></textarea>
+                    <button class="modal-submit-btn" type="submit">
+                      Submit Form
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -235,5 +290,6 @@
     <script type="module" src="./src/js/viewport.js"></script>
     <script type="module" src="./src/js/mobile-window.js"></script>
     <script type="module" src="./src/js/load.js"></script>
+    <script type="module" src="./src/js/modal.js"></script>
   </body>
 </html>

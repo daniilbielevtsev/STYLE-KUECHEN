@@ -782,3 +782,170 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 420px;
+  padding: 30px 25px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.212);
+  backdrop-filter: blur(15px);
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.modal-titel {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: start;
+  position: relative;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close:hover {
+  color: white;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal-input,
+.modal-massege {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.07);
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.modal-input:focus,
+.modal-massege:focus {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.modal-input::placeholder,
+.modal-massege::placeholder {
+  color: #bbb;
+  font-family: "Inter", sans-serif;
+}
+
+.modal-massege {
+  min-height: 100px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+.modal-icon {
+  width: 20px;
+  height: 20px;
+}
+.modal-submit-btn {
+  padding: 12px 25px;
+  background-color: rgb(48, 39, 39);
+  border-radius: 6px;
+  color: var(--text-color-header);
+}
+@media (max-width: 1200px) {
+  .modal-content {
+    padding: 24px;
+    max-width: 500px;
+  }
+
+  .modal-titel {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-content {
+    padding: 22px;
+    max-width: 450px;
+  }
+
+  .modal-titel {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 658px) {
+  .modal-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(92, 92, 92, 0.212);
+    backdrop-filter: blur(35px);
+    padding-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+    transform: none;
+    border-radius: 0;
+    padding: 20px 15px;
+    overflow-y: auto;
+  }
+  .all-modal-info {
+    margin-top: 50px;
+  }
+  .modal-titel {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .modal-form {
+    margin-top: 15px;
+  }
+
+  .modal-input,
+  .modal-massege {
+    font-size: 14px;
+  }
+
+  .modal-submit-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .close {
+    top: 16px;
+    right: 18px;
+    font-size: 24px;
+  }
+}
