@@ -908,8 +908,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(92, 92, 92, 0.212);
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(30px);
+    background: rgb(0 0 0 / 16%);
     padding-top: 100px;
     width: 100vw;
     height: 100vh;
@@ -929,9 +929,12 @@ body {
     margin-bottom: 15px;
     margin-bottom: 25px;
   }
-
+  .modal {
+    background-color: rgba(0, 0, 0, 0);
+  }
   .modal-form {
-    margin-top: 20px;
+    margin-top: 30px;
+    gap: 20px;
   }
 
   .modal-input,
@@ -949,8 +952,12 @@ body {
   }
 
   .close {
-    top: 16px;
-    right: 18px;
-    font-size: 24px;
+    top: 20px;
+    right: 20px;
+    /* font-size: 24px; */
+  }
+  .modal-icon {
+    width: 30px;
+    height: 30px;
   }
 }
