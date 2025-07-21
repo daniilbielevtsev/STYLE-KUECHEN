@@ -410,7 +410,6 @@ body {
 }
 /* =========================services============================ */
 .services {
-  padding-top: 160px;
   padding-bottom: 160px;
 }
 .services-container {
@@ -531,7 +530,6 @@ body {
 
 @media (max-width: 768px) {
   .services {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -565,7 +563,6 @@ body {
 
 @media (max-width: 658px) {
   .services {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 
@@ -876,7 +873,7 @@ body {
 }
 .modal-submit-btn {
   padding: 12px 25px;
-  background-color: rgb(48, 39, 39);
+  background-color: rgb(0, 0, 0);
   border-radius: 6px;
   color: var(--text-color-header);
 }
@@ -959,5 +956,52 @@ body {
   .modal-icon {
     width: 30px;
     height: 30px;
+  }
+}
+.modal-conset-label {
+  font-size: 10px;
+  font-weight: 300;
+}
+.modal-conset-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.datenschutz {
+  color: rgb(126, 126, 197);
+  text-decoration: underline;
+}
+.datenschutz-checkbox {
+  width: 17px;
+  height: 17px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+.privacyModal {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  padding: 20px;
+  background: #4b4b4b;
+  z-index: 1000;
+  border-radius: 6px;
+}
+.Schließen {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #000000;
+  border-radius: 4px;
+  margin: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.more-con {
+  font-size: 10px;
+}
+@media (max-width: 658px) {
+  .more-con {
+    font-size: 15px;
   }
 }

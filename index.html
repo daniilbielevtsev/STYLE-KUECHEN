@@ -140,10 +140,58 @@
                       required
                       placeholder="Dienstleistung anfragen"
                     ></textarea>
+
+                    <label class="modal-consent">
+                      <input
+                        type="checkbox"
+                        required
+                        style="margin-right: 5px"
+                        class="datenschutz-checkbox"
+                      />
+                      <div class="more-con">
+                        Ich stimme zu, dass meine Daten zur Kontaktaufnahme
+                        verwendet werden.
+                        <a
+                          class="datenschutz"
+                          href="#datenschutz"
+                          onclick="openPrivacy()"
+                          >Datenschutzerklärung</a
+                        >
+                      </div>
+                    </label>
                     <button class="modal-submit-btn" type="submit">
-                      Submit Form
+                      Absenden
                     </button>
                   </form>
+                  <div class="privacyModal" id="privacyModal" style="">
+                    <h3 class="Datenschutzerklärung-titel">
+                      Datenschutzerklärung
+                    </h3>
+                    <p class="Datenschutzerklärung-text">
+                      Ich nehme den Schutz deiner persönlichen Daten sehr
+                      ernst.<br /><br />
+                      Wenn du das Kontaktformular ausfüllst, werden dein Name
+                      und deine E-Mail-Adresse ausschließlich dazu verwendet, um
+                      auf deine Nachricht zu antworten.<br /><br />
+                      <strong>Was passiert mit deinen Daten?</strong><br />
+                      – Ich speichere deine Angaben nur so lange, wie es für die
+                      Kommunikation notwendig ist.<br />
+                      – Deine Daten werden
+                      <strong>nicht an Dritte weitergegeben</strong>.<br />
+                      – Es erfolgt
+                      <strong>keine Nutzung zu Werbezwecken</strong
+                      >.<br /><br />
+                      <strong>Recht auf Auskunft und Löschung:</strong><br />
+                      Du kannst jederzeit eine Löschung deiner Daten anfordern
+                      per E-Mail:
+                      <a href="mailto:info@stylekuechen.ch"
+                        >info@stylekuechen.ch</a
+                      >
+                    </p>
+                    <button class="Schließen" onclick="closePrivacy()">
+                      Schließen
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -230,7 +278,7 @@
           </div>
         </div>
       </section>
-      <section class="kontacts" id="kontakts" data-aos="zoom-in">
+      <section class="kontacts" id="kontakts">
         <div class="container kontacts-container">
           <h3 class="kontacts-subtitel">Kontakte</h3>
           <h2 class="kontacts-titel">Wir sind für Sie da</h2>
@@ -291,5 +339,14 @@
     <script type="module" src="./src/js/mobile-window.js"></script>
     <script type="module" src="./src/js/load.js"></script>
     <script type="module" src="./src/js/modal.js"></script>
+    <script>
+      function openPrivacy() {
+        document.getElementById("privacyModal").style.display = "block";
+      }
+
+      function closePrivacy() {
+        document.getElementById("privacyModal").style.display = "none";
+      }
+    </script>
   </body>
 </html>
