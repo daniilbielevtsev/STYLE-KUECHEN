@@ -883,7 +883,7 @@ body {
 @media (max-width: 1200px) {
   .modal-content {
     padding: 24px;
-    max-width: 500px;
+    max-width: 400px;
   }
 
   .modal-titel {
