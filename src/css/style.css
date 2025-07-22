@@ -785,8 +785,8 @@ body {
   z-index: 1000;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -803,6 +803,7 @@ body {
   backdrop-filter: blur(15px);
   color: white;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .modal-titel {
@@ -908,14 +909,17 @@ body {
     backdrop-filter: blur(30px);
     background: rgb(0 0 0 / 16%);
     padding-top: 100px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     max-width: none;
     max-height: none;
     transform: none;
     border-radius: 0;
     padding: 20px 15px;
-    overflow-y: auto;
+  }
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
   }
   .all-modal-info {
     margin-top: 50px;
@@ -998,24 +1002,5 @@ body {
   margin-left: 0;
 }
 .more-con {
-  font-size: 10px;
-}
-@media (max-width: 658px) {
-  .modal-content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(30px);
-    background: rgb(0 0 0 / 16%);
-    padding-top: 100px;
-    width: 100vw;
-    height: 100dvh;
-    max-width: none;
-    max-height: none;
-    transform: none;
-    border-radius: 0;
-    padding: 20px 15px;
-    overflow-y: auto;
-  }
+  font-size: 13px;
 }
