@@ -1001,7 +1001,21 @@ body {
   font-size: 10px;
 }
 @media (max-width: 658px) {
-  .more-con {
-    font-size: 15px;
+  .modal-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(30px);
+    background: rgb(0 0 0 / 16%);
+    padding-top: 100px;
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    transform: none;
+    border-radius: 0;
+    padding: 20px 15px;
+    overflow-y: auto;
   }
 }
