@@ -254,14 +254,9 @@ body {
   max-width: 100%;
   text-align: center;
   cursor: pointer;
-  /* &:hover {
-    background-color: rgb(199, 199, 199);
+  &:hover {
+    background-color: rgb(29, 29, 29);
     transition: background-color 0.2s ease-in;
-  } */
-}
-@media (min-width: 1440px) {
-  .hero-container {
-    height: 550px;
   }
 }
 @media (max-width: 1200px) {
@@ -984,12 +979,12 @@ body {
 .privacyModal {
   display: none;
   position: fixed;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  padding: 20px;
+  top: 6%;
+  left: 7%;
+  width: 86%;
+  padding: 10px;
   background: #4b4b4b;
-  z-index: 1000;
+  z-index: 10010;
   border-radius: 6px;
 }
 .Schließen {
@@ -1003,4 +998,7 @@ body {
 }
 .more-con {
   font-size: 13px;
+}
+.Datenschutzerklärung-text {
+  font-size: 14px;
 }
