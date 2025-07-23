@@ -103,40 +103,24 @@
                       alt="close-button"
                     />
                   </button>
-                  <form
-                    class="modal-form"
-                    action="https://api.web3forms.com/submit"
-                    method="POST"
-                  >
-                    <input
-                      type="hidden"
-                      name="access_key"
-                      value="0a4fd915-5d84-407e-bdbb-d8dfe7e08afa"
-                    />
+                  <form action="#" class="modal-form" id="contactForm">
                     <input
                       class="modal-input"
                       type="text"
-                      name="name"
+                      name="user_name"
                       required
                       placeholder="Name"
                     />
                     <input
                       class="modal-input"
-                      type="text"
-                      name="Nachname"
-                      required
-                      placeholder="Nachname"
-                    />
-                    <input
-                      class="modal-input"
                       type="email"
-                      name="email"
+                      name="user_email"
                       required
                       placeholder="E-mail"
                     />
                     <textarea
                       class="modal-massege"
-                      name="message"
+                      name="user_message"
                       required
                       placeholder="Dienstleistung anfragen"
                     ></textarea>
@@ -159,6 +143,7 @@
                         >
                       </div>
                     </label>
+
                     <button class="modal-submit-btn" type="submit">
                       Absenden
                     </button>
@@ -347,6 +332,31 @@
       function closePrivacy() {
         document.getElementById("privacyModal").style.display = "none";
       }
+    </script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+      emailjs.init("j8yNnCF0pGcmKEaVr");
+    </script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("j8yNnCF0pGcmKEaVr");
+      })();
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_ffm63ml", "template_ei6ojni", this).then(
+            function () {
+              alert("Danke für Ihre Nachricht!");
+            },
+            function (error) {
+              alert("Fehler: " + JSON.stringify(error));
+            }
+          );
+        });
     </script>
   </body>
 </html>
