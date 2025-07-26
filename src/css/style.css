@@ -325,6 +325,22 @@ body {
     height: calc(var(--vh, 1vh) * 100);
   }
 }
+@media (max-height: 450px) {
+  .hero-titel {
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+  .hero-info-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .hero-info-btn {
+    padding: 10px 65px;
+  }
+  .hero-info-con {
+    padding-bottom: 30px;
+  }
+}
 /* ============================== */
 .about {
   padding-top: 160px;
@@ -811,4 +827,12 @@ body {
   max-width: 650px;
   color: #000000bb;
   margin-bottom: 20px;
+}
+@media (max-width: 658px) {
+  .pages-titel {
+    font-size: 35px;
+  }
+  .pages-subtitel {
+    font-size: 23px;
+  }
 }
