@@ -1002,3 +1002,7 @@ body {
 .Datenschutzerklärung-text {
   font-size: 14px;
 }
+.logo-website img {
+  width: 100%;
+  height: auto;
+}
