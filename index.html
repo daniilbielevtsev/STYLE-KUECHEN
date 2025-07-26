@@ -243,40 +243,5 @@
     <script type="module" src="./src/js/viewport.js"></script>
     <script type="module" src="./src/js/mobile-window.js"></script>
     <script type="module" src="./src/js/load.js"></script>
-    <script type="module" src="./src/js/modal.js"></script>
-    <script>
-      function openPrivacy() {
-        document.getElementById("privacyModal").style.display = "block";
-      }
-
-      function closePrivacy() {
-        document.getElementById("privacyModal").style.display = "none";
-      }
-    </script>
-    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-    <script>
-      emailjs.init("j8yNnCF0pGcmKEaVr");
-    </script>
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script>
-      (function () {
-        emailjs.init("j8yNnCF0pGcmKEaVr");
-      })();
-
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          emailjs.sendForm("service_ffm63ml", "template_ei6ojni", this).then(
-            function () {
-              alert("Danke für Ihre Nachricht!");
-            },
-            function (error) {
-              alert("Fehler: " + JSON.stringify(error));
-            }
-          );
-        });
-    </script>
   </body>
 </html>
