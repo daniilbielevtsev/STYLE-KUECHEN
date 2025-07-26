@@ -325,7 +325,7 @@ body {
     height: calc(var(--vh, 1vh) * 100);
   }
 }
-@media (max-height: 450px) {
+@media (max-height: 550px) {
   .hero-titel {
     font-size: 60px;
     margin-bottom: 0px;
