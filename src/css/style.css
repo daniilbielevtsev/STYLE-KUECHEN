@@ -711,6 +711,7 @@ body {
 .footer-logo {
   width: 145px;
   height: 79px;
+  margin-bottom: 10px;
 }
 .footer-list {
   display: flex;
@@ -772,4 +773,42 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.another-page-link {
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(138, 138, 138);
+    text-decoration: underline;
+  }
+}
+/* ================================ */
+.pages-body {
+  background-color: #f8f5f2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.back {
+  background-color: var(--header-button-color);
+  color: var(--main-subtitel-color);
+  padding: 10px 24px;
+  border-radius: 8px;
+}
+.pages-titel {
+  font-size: 50px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pages-subtitel {
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #000;
+}
+.pages-text {
+  font-size: 15px;
+  max-width: 650px;
+  color: #000000bb;
+  margin-bottom: 20px;
 }
