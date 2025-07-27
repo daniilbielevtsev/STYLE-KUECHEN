@@ -110,8 +110,7 @@ body {
   cursor: pointer;
   z-index: 1000;
   position: absolute;
-  top: 24px;
-  right: 24px;
+
   transition: transform 0.3s ease;
 }
 
@@ -689,7 +688,7 @@ body {
     padding-top: 40px;
     padding-bottom: 80px;
     background-image: none;
-    background: linear-gradient(to top, #b9b0a793, #ffffff00);
+    background: linear-gradient(to top, #a07e5b93, #ffffff00);
   }
 
   .kontacts-titel {
