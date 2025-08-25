@@ -1,0 +1,26 @@
+:root {
+  --text-color-header: #ffffff;
+  --header-button-color: #000;
+  --main-titel-color: #453030;
+  --main-subtitel-color: #957d62;
+  --main-text-color: rgba(0, 0, 0, 0.75);
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--main-text-color);
+  background-color: #f8f5f2;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.bg-img-on {
+  background-image: url(../images/photos/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
