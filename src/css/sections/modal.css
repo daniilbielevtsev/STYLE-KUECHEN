@@ -1,0 +1,115 @@
+.modal {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, 0.247);
+  max-width: 480px;
+  width: 90%;
+  padding: 20px;
+  display: none;
+  border-radius: 12px;
+  z-index: 1000;
+  border: 1px solid rgba(239, 239, 239, 0.32);
+}
+
+.modal-contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.modal-icon-background {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.123);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+.modal-icon {
+  width: 24px;
+  height: 24px;
+}
+.modal-link {
+  font-size: 18px;
+  line-height: 169%;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.modal-titel {
+  font-weight: 500;
+  font-size: 34px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.modal-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 20px;
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 768px) {
+  .modal {
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 95%;
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .modal-titel {
+    font-size: 36px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .modal-text {
+    font-size: 18px;
+  }
+
+  .modal-link {
+    font-size: 25px;
+  }
+
+  .modal-icon-background {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .close {
+    top: 16px;
+    right: 16px;
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 320px) {
+  .modal-link {
+    font-size: 18px;
+  }
+  .modal-text {
+    font-size: 15px;
+  }
+}

@@ -151,10 +151,48 @@
               <p class="hero-info-text">
                 Massgeschneiderte Küchenlösungen aus der Schweiz
               </p>
-              <a href="#kontakts" class="hero-info-btn">Beratung</a>
+              <button class="hero-info-btn">Beratung</button>
             </div>
           </div>
         </div>
+        <!--modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close"
+              ><img
+                src="./src/images/icons/close-modal-logo.svg"
+                alt="close-btn"
+            /></span>
+            <h1 class="modal-titel">Kostenlose Beratung!</h1>
+            <p class="modal-text">
+              Kontaktieren Sie uns per Telefon oder Nachricht und sichern Sie
+              sich Ihre kostenlose Beratung.
+            </p>
+            <div class="modal-contacts">
+              <a href="mailto:info@stylekuechen.ch" class="modal-link"
+                ><div class="modal-icon-background">
+                  <img
+                    class="modal-icon"
+                    src="./src/images/icons/e-main icon.svg"
+                    alt="e-mail"
+                  />
+                </div>
+                info@stylekuechen.ch</a
+              >
+              <a href="tel:076 769 67 57" class="modal-link"
+                ><div class="modal-icon-background">
+                  <img
+                    class="modal-icon"
+                    src="./src/images/icons/phone icon.svg"
+                    alt="phone"
+                  />
+                </div>
+                076 769 67 57</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- ============modal===================== -->
       </section>
       <section class="about" id="about">
         <div class="container about-container">
@@ -307,5 +345,6 @@
     <script type="module" src="./src/js/viewport.js"></script>
     <script type="module" src="./src/js/mobile-window.js"></script>
     <script type="module" src="./src/js/load.js"></script>
+    <script type="module" src="./src/js/modal.js"></script>
   </body>
 </html>
