@@ -3,6 +3,6 @@ window.addEventListener("load", () => {
     const preloader = document.querySelector("#preloader");
     preloader.style.opacity = "0";
     preloader.style.transition = "opacity 0.5s ease";
-    setTimeout(() => preloader.remove(), 300);
-  }, 300);
+    setTimeout(() => preloader.remove(), 100);
+  }, 200);
 });
