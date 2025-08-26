@@ -10,7 +10,6 @@
   display: none;
   border-radius: 12px;
   z-index: 1000;
-  border: 1px solid rgba(239, 239, 239, 0.32);
 }
 
 .modal-contacts {
@@ -62,7 +61,6 @@
   margin-bottom: 20px;
 }
 
-/* Адаптив для мобильных устройств */
 @media (max-width: 768px) {
   .modal {
     bottom: 10px;
