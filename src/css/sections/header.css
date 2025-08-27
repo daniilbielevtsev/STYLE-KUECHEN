@@ -74,7 +74,7 @@
   --burger-line: 3px;
   --burger-color: var(--text-color-header);
 
-  width: 30px;
+  width: 35px;
   height: var(--burger-size);
   display: none;
   flex-direction: column;
