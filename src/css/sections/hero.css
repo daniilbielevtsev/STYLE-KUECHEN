@@ -112,13 +112,13 @@
       url(../../images/photos/hero-bg.jpg);
   }
   .hero-info-con {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   .hero-container {
-    height: calc(var(--vh, 1vh) * 100);
+    /* height: calc(var(--vh, 1vh) * 100); */
   }
 }
-@media (max-height: 550px) {
+@media (max-width: 370px) {
   .hero-titel {
     font-size: 60px;
     margin-bottom: 0px;
