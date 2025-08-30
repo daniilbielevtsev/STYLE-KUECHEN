@@ -112,7 +112,7 @@
       url(../../images/photos/hero-bg.jpg);
   }
   .hero-info-con {
-    padding-bottom: 60px;
+    padding-bottom: 55px;
   }
   .hero-container {
     height: calc(var(--vh, 1vh) * 100);
@@ -131,6 +131,6 @@
     padding: 10px 65px;
   }
   .hero-info-con {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 }
