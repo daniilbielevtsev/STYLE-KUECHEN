@@ -1,5 +1,5 @@
 .footer {
-  background-color: #372626;
+  background-color: var(--footer-bg-color);
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -21,7 +21,7 @@
 .footer-link {
   font-weight: 400;
   font-size: 16px;
-  color: var(--text-color-header);
+  color: var(--titel-header);
   &:hover {
     text-decoration: underline;
   }

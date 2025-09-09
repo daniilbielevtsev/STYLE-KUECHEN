@@ -4,13 +4,16 @@
   --main-titel-color: #453030;
   --main-subtitel-color: #957d62;
   --main-text-color: rgba(0, 0, 0, 0.75);
+  --footer-bg-color: #372626;
+  --body-bg-color: #f8f5f2;
+  --titel-header: #ffffffff;
 }
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: var(--main-text-color);
-  background-color: #f8f5f2;
+  background-color: var(--body-bg-color);
 }
 .container {
   max-width: 1200px;

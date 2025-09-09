@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 120px;
   line-height: 95%;
-  color: var(--text-color-header);
+  color: var(--titel-header);
   max-width: 670px;
 }
 .hero-info-con {
@@ -35,15 +35,15 @@
   font-size: 22px;
   line-height: 140%;
   max-width: 210px;
-  color: var(--text-color-header);
+  color: var(--titel-header);
   margin-bottom: 35px;
   margin-top: 35px;
 }
 .hero-info-btn {
   border-radius: 8px;
   padding: 14px 75px;
-  background-color: var(--header-button-color);
-  color: var(--text-color-header);
+  background-color: black;
+  color: var(--titel-header);
   max-width: 100%;
   text-align: center;
   cursor: pointer;

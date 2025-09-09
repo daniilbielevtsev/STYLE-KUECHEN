@@ -65,7 +65,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--main-text-color);
   max-width: 382px;
 }
 @media (max-width: 1200px) {

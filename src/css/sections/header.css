@@ -94,7 +94,7 @@
   display: block;
   height: var(--burger-line);
   width: 100%;
-  background-color: var(--burger-color);
+  background-color: var(--titel-header);
   border-radius: 50px;
   transition: transform 0.3s ease, opacity 0.2s ease, width 0.2s ease;
   transform-origin: center;
@@ -211,4 +211,41 @@
   .mobile-contacts-link {
     font-size: 20px;
   }
+}
+/* ================== */
+.theme-btn {
+  position: relative;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  background: rgba(0, 0, 0, 0.33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.4s, transform 0.2s;
+  overflow: hidden;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+.theme-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-btn .light,
+.theme-btn .dark {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.theme-btn.light-mode .light {
+  opacity: 1;
+}
+
+.theme-btn.dark-mode .dark {
+  opacity: 1;
 }
