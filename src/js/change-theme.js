@@ -5,6 +5,7 @@ const darkTheme = {
   "--main-text-color": "rgba(255, 255, 255, 0.85)",
   "--body-bg-color": "#2D261F",
   "--titel-header": "#d6d0c8ff",
+  "--team-card-bg": "#231909",
 };
 
 const lightTheme = {
@@ -16,6 +17,7 @@ const lightTheme = {
   "--footer-bg-color": "#372626",
   "--body-bg-color": "#f8f5f2",
   "--titel-header": "#ffffffff",
+  "--team-card-bg": "#d9d2c7",
 };
 
 const toggleButton = document.querySelector("#toggleTheme");
