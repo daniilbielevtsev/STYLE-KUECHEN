@@ -1,3 +1,6 @@
+.team {
+  padding-bottom: 80px;
+}
 .team-subtitel {
   font-weight: 400;
   font-size: 14px;
@@ -50,6 +53,9 @@
 }
 
 @media (max-width: 658px) {
+  .team {
+    padding-bottom: 30px;
+  }
   .team-titel {
     font-size: 40px;
   }
