@@ -71,3 +71,9 @@
     height: 160px;
   }
 }
+@media (max-width: 380px) {
+  .member {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
