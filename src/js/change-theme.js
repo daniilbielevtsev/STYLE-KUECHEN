@@ -17,7 +17,7 @@ const lightTheme = {
   "--footer-bg-color": "#372626",
   "--body-bg-color": "#f8f5f2",
   "--titel-header": "#ffffffff",
-  "--team-card-bg": "#d9d2c7",
+  "--team-card-bg": "#E6D5C0",
 };
 
 const toggleButton = document.querySelector("#toggleTheme");
