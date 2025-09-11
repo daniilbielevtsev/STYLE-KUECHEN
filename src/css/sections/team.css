@@ -1,85 +1,94 @@
 .team {
-  padding-bottom: 80px;
 }
+
 .team-subtitel {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
   color: var(--main-subtitel-color);
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
+
 .team-titel {
   font-weight: 400;
   font-size: 60px;
   line-height: 100%;
   color: var(--main-titel-color);
-  max-width: 559px;
   margin-bottom: 33px;
+  max-width: 559px;
 }
+
 .team-members {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
 .member {
-  flex: 1 1 45%;
   display: flex;
-
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #97959538;
   border-radius: 8px;
 }
 
 .member-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 8px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* текст по левому краю */
 }
 
 .member-name {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 100%;
-  color: var(--main-titel-colo);
-  margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: var(--main-titel-color);
 }
 
 .member-info p {
   font-size: 0.95rem;
-  margin: 0.25rem 0 0;
   color: var(--main-text-color);
-  max-width: 240px;
+  line-height: 1.4;
 }
-@media (max-width: 667px) {
-  .team-members {
-    display: flex;
-    flex-direction: column;
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .team-titel {
+    font-size: 40px;
+    max-width: 100%;
+  }
+  .member {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .member-photo {
+    width: 100px;
+    height: 100px;
   }
 }
 
-@media (max-width: 658px) {
-  .team {
-    padding-bottom: 30px;
-  }
+@media (max-width: 480px) {
   .team-titel {
     font-size: 40px;
   }
-  .team-subtitel {
-    font-size: 12px;
-  }
-  .member-name {
-    font-size: 33px;
-    margin-bottom: 8px;
-  }
-  /* .member-photo {
-    width: 100%;
-    height: 100%;
-  } */
-}
-@media (max-width: 380px) {
   .member {
     flex-direction: column;
-    gap: 15px;
+    align-items: flex-start;
+  }
+  .member-photo {
+    width: 120px;
+    height: 120px;
+  }
+  .member-name {
+    font-size: 20px;
   }
 }
