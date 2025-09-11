@@ -110,3 +110,7 @@ div {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
+html,
+body {
+  overflow-x: hidden;
+}
