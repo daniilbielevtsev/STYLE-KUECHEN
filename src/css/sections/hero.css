@@ -5,7 +5,7 @@
       rgba(0, 0, 0, 0.17) 100%
     ),
     linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.17) 100%),
-    url(../../images/photos/hero-bg.jpg);
+    url(../../images/photos/hero-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
