@@ -56,6 +56,29 @@
     text-decoration: underline;
   }
 }
+.kontakts-time-main-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.kontakts-time-titel {
+  font-size: 28px;
+  color: var(--main-titel-color);
+  margin-bottom: 15px;
+}
+.kontakts-time-subtitel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--main-titel-color);
+  margin-bottom: 5px;
+}
+.kontakts-time-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
 @media (max-width: 1100px) {
   .kontacts-container {
     flex-direction: column;
@@ -70,9 +93,17 @@
     padding-top: 60px;
     padding-bottom: 100px;
   }
-
+  .kontakts-time-main-con {
+    margin-bottom: 28px;
+  }
   .kontacts-titel {
     font-size: 36px;
+  }
+  .kontakts-time-titel {
+    font-size: 22px;
+  }
+  .kontakts-time-text {
+    font-size: 16px;
   }
 
   .kontacts-text {
