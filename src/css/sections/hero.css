@@ -24,6 +24,7 @@
   color: var(--titel-header);
   max-width: 670px;
 }
+
 .hero-info-con {
   display: flex;
   justify-content: space-between;
@@ -40,6 +41,7 @@
   margin-top: 35px;
 }
 .hero-info-btn {
+  font-size: 16px;
   border-radius: 8px;
   padding: 14px 75px;
   background-color: black;
@@ -47,11 +49,14 @@
   max-width: 100%;
   text-align: center;
   cursor: pointer;
-  &:hover {
-    background-color: rgb(29, 29, 29);
-    transition: background-color 0.2s ease-in;
-  }
+  display: inline-block; /* чтобы ширина работала */
 }
+
+.hero-info-btn:hover {
+  background-color: rgb(29, 29, 29);
+  transition: background-color 0.2s ease-in;
+}
+
 @media (max-width: 1200px) {
   .hero-titel {
     font-size: 90px;
@@ -116,6 +121,17 @@
   }
   .hero-container {
     height: calc(var(--vh, 1vh) * 100);
+  }
+  .hero-info-btn {
+    width: 100%;
+    padding: 14px 0;
+    box-sizing: border-box;
+  }
+  .hero-info {
+    width: 100%;
+  }
+  .hero-info-text {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 370px) {
