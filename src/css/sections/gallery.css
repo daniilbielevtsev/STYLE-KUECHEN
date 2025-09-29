@@ -1,0 +1,127 @@
+/* .gallery {
+  padding-bottom: 160px;
+}
+
+.gallery-subtitel {
+  color: var(--main-subtitel-color);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.gallery-titel {
+  color: var(--main-titel-color);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+.gallery-photos {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery-photo {
+  max-width: 209px;
+  height: 284px;
+  border-radius: 4px;
+}
+@media (max-width: 658px) {
+  .gallery {
+    display: none;
+  }
+} */
+.gallery {
+  padding-bottom: 80px;
+}
+
+.gallery-subtitel {
+  color: var(--main-subtitel-color);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.gallery-titel {
+  color: var(--main-titel-color);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  max-width: 650px;
+  margin-bottom: 33px;
+}
+.gallery-photos {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.gallery-photo {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: calc(100vw - 30px);
+  max-width: 330px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Стили для скроллбара */
+.gallery-photos::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-photos::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.gallery-photos::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.gallery-photos::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Для больших экранов - обычная сетка */
+@media (min-width: 659px) {
+  .gallery {
+    padding-bottom: 160px;
+  }
+
+  .gallery-subtitel {
+    color: var(--main-subtitel-color);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .gallery-titel {
+    color: var(--main-titel-color);
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    max-width: 650px;
+    margin-bottom: 40px;
+  }
+  .gallery-photos {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .gallery-photo {
+    max-width: 209px;
+    height: 284px;
+    border-radius: 4px;
+  }
+}
