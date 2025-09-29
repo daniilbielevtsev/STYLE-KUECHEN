@@ -36,7 +36,6 @@
   border-radius: 6px;
 }
 
-/* Стили для скроллбара */
 .gallery-photos::-webkit-scrollbar {
   height: 6px;
 }
@@ -86,5 +85,24 @@
     max-width: 209px;
     height: 284px;
     border-radius: 4px;
+  }
+}
+@media (max-width: 370px) {
+  .gallery-photo {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: calc(100vw - 30px);
+    max-width: 310px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .gallery-photos {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
   }
 }
