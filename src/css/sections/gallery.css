@@ -1,5 +1,6 @@
 .gallery {
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .gallery-subtitel {
@@ -55,10 +56,6 @@
 }
 
 @media (min-width: 659px) {
-  .gallery {
-    padding-bottom: 160px;
-  }
-
   .gallery-subtitel {
     color: var(--main-subtitel-color);
     font-weight: 400;
@@ -85,6 +82,12 @@
     max-width: 209px;
     height: 284px;
     border-radius: 4px;
+  }
+}
+@media (max-width: 658px) {
+  .gallery {
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 @media (max-width: 370px) {
