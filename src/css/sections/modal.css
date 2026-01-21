@@ -2,14 +2,23 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
-  backdrop-filter: blur(200px);
-  background: rgba(0, 0, 0, 0.247);
   max-width: 480px;
   width: 90%;
   padding: 20px;
   display: none;
-  border-radius: 12px;
+  border-radius: 20px; /* Увеличил для более плавных краев */
   z-index: 1000;
+
+  /* iOS Liquid Glass эффект */
+  background: rgba(255, 255, 255, 0.25); /* Полупрозрачный белый */
+  backdrop-filter: blur(40px) saturate(180%) contrast(120%); /* Комбинация эффектов */
+  -webkit-backdrop-filter: blur(40px) saturate(180%) contrast(120%); /* Для Safari */
+
+  /* Градиентная обводка для стеклянного эффекта */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .modal-contacts {

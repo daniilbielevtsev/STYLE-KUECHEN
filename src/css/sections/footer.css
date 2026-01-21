@@ -26,6 +26,11 @@
     text-decoration: underline;
   }
 }
+.footer-links-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 @media (max-width: 658px) {
   .footer-container {
     display: flex;
