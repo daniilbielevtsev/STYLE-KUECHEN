@@ -6,19 +6,11 @@
   width: 90%;
   padding: 20px;
   display: none;
-  border-radius: 20px; /* Увеличил для более плавных краев */
+  border-radius: 20px;
   z-index: 1000;
-
-  /* iOS Liquid Glass эффект */
-  background: rgba(255, 255, 255, 0.25); /* Полупрозрачный белый */
-  backdrop-filter: blur(40px) saturate(180%) contrast(120%); /* Комбинация эффектов */
-  -webkit-backdrop-filter: blur(40px) saturate(180%) contrast(120%); /* Для Safari */
-
-  /* Градиентная обводка для стеклянного эффекта */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(130px);
+  background: rgba(0, 0, 0, 0.122);
+  transition: right 0.3s ease;
 }
 
 .modal-contacts {
@@ -78,7 +70,7 @@
     max-width: 95%;
     width: 95%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
   }
 
   .modal-titel {
