@@ -60,6 +60,7 @@
   .about-photo {
     width: 100%;
     height: auto;
+    border-radius: 8px;
   }
   .about-titel {
     font-size: 40px;
