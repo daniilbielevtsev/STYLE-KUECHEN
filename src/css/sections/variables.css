@@ -28,3 +28,17 @@ body {
   background-size: cover;
   background-position: top;
 }
+
+@media (max-width: 768px) {
+  :root {
+    --text-color-header: #000000be;
+    --header-button-color: #fff;
+    --main-titel-color: #e9dfd6ff;
+    --main-subtitel-color: #957d62;
+    --main-text-color: rgba(255, 255, 255, 0.85);
+    --footer-bg-color: #372626;
+    --body-bg-color: #2d261f;
+    --titel-header: #d6d0c8ff;
+    --team-card-bg: #231909;
+  }
+}

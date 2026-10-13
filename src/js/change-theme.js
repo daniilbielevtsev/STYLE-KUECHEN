@@ -1,4 +1,4 @@
-const darkTheme = {
+const lightTheme = {
   "--text-color-header": "#000000be",
   "--header-button-color": "#fff",
   "--main-titel-color": "#e9dfd6ff",
@@ -8,7 +8,7 @@ const darkTheme = {
   "--team-card-bg": "#231909",
 };
 
-const lightTheme = {
+const darkTheme = {
   "--text-color-header": "#ffffff",
   "--header-button-color": "#000",
   "--main-titel-color": "#453030",
